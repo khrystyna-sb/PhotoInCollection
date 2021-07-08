@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="PhotoInCollection" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="188" height="172"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="188" height="172"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ihF-n0-Y9q">
+                        <rect key="frame" x="0.0" y="0.0" width="188" height="172"/>
+                    </imageView>
+                    <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJ4-Ao-c1A">
+                        <rect key="frame" x="126" y="124" width="51" height="38"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="Tup-ES-kji"/>
+                            <constraint firstAttribute="height" constant="38" id="ses-5s-xcr"/>
+                        </constraints>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" systemColor="systemBackgroundColor"/>
+                        </state>
+                        <connections>
+                            <action selector="action:" destination="gTV-IL-0wX" eventType="touchUpInside" id="fvC-23-MvC"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nJ4-Ao-c1A" secondAttribute="trailing" constant="11" id="GsL-gP-hNQ"/>
+                <constraint firstItem="ihF-n0-Y9q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HCz-b5-cWQ"/>
+                <constraint firstItem="ihF-n0-Y9q" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="RMm-IJ-DHl"/>
+                <constraint firstAttribute="bottom" secondItem="nJ4-Ao-c1A" secondAttribute="bottom" constant="10" id="gBR-46-FKX"/>
+                <constraint firstAttribute="trailing" secondItem="ihF-n0-Y9q" secondAttribute="trailing" id="vha-ee-eYY"/>
+                <constraint firstAttribute="bottom" secondItem="ihF-n0-Y9q" secondAttribute="bottom" id="wDC-H5-p9D"/>
+            </constraints>
+            <size key="customSize" width="188" height="172"/>
+            <connections>
+                <outlet property="imageView" destination="ihF-n0-Y9q" id="Dll-d7-lI9"/>
+            </connections>
+            <point key="canvasLocation" x="-305.79710144927537" y="-150.66964285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
